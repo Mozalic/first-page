@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="assists/js/jquery-3.1.1.js"></script>
+    <script src="assists/dist/js/bootstrap.min.js"></script>
+    <script src="assists/js/main.js"></script>
+    <script src="assists/js/jquery.form-validator.min.js"></script>
+    <script src="assists/FormValidator/Gruntfile.js"></script>
+    <link rel="stylesheet" href="assists/css/main.css">
+    <link rel="stylesheet" href="assists/dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ping指令用不了的可怜人的报名表</title>
+</head>
+<body>
+    <div id="lis">
+    <form class="form">
+        <fieldset>
+            <img id="niconicoG" src="imgs/G胖.png">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-5">
+                        <label>姓名</label>
+                        <input class="inp" id="name" placeholder="姓名">
+                    </div>
+                    <div class="col-md-4 col-sm-7">
+                        <label>学号</label>
+                        <input class="inp" id="sid" placeholder="学号"
+                               data-validation="length number"
+                               data-validation-length="10"
+                               data-validation-error-msg="学号是10位啊，10位啊【重读">
+                    </div>
+                    <div class="col-md-4 col-sm-7">
+                        <label>专业/大类</label>
+                        <input class="inp" id="major" placeholder="工信/计科">
+                    </div>
+                    <div class="col-md-2 col-sm-5">
+                        <label>性别</label>
+                        <select class="sel" id="sex">
+                            <option>------</option>
+                            <option>男</option>
+                            <option>女</option>
+                            <option>大……</option>
+                            <option>其他</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-7">
+                        <label>邮箱</label>
+                        <input class="inp" id="mailbox" placeholder="xxxxxxx@xxx.xxx"
+                               data-validation="email"
+                               data-validation-error-msg="邮箱怎么会填错啊！常考">
+                    </div>
+                    <div class="col-md-2 col-sm-5">
+                        <label>你在steam上消费过吗？</label>
+                        <select class="sel" id="ifbuy">
+                            <option>------</option>
+                            <option>是</option>
+                            <option>否</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 col-sm-7">
+                        <label>你十二月的生活费预计是多少？</label>
+                        <select class="sel" id="income">
+                            <option>------</option>
+                            <option>0</option>
+                            <option>1-500</option>
+                            <option>501-1000</option>
+                            <option>1001-2000</option>
+                            <option>2000以上</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 col-sm-5">
+                        <label>年级</label>
+                        <select class="sel" id="lev">
+                            <option>------</option>
+                            <option>大一</option>
+                            <option>大二</option>
+                            <option>大三</option>
+                            <option>大四</option>
+                            <option>研究生</option>
+                            <option>其他</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm=7">
+                        <label>你会在圣诞节时在steam消费的首要理由是什么？</label>
+                        <select class="sel" id="firstrea">
+                            <option value="ans0">------</option>
+                            <option value="ans1">能以高折扣购入游戏</option>
+                            <option value="ans2">能相对便宜的价格购入喜欢的游戏</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 col-sm=7">
+                        <label>你会在圣诞节时在steam消费的次要理由是什么？</label>
+                        <select class="sel" id="secondrea">
+                            <option value="ans0">------</option>
+                            <option value="ans1">能以高折扣购入游戏</option>
+                            <option value="ans2">能相对便宜的价格购入喜欢的游戏</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" id="firstque">
+                    <div class="que col-md-12">
+                        <label>请谈谈你希望出现在圣诞活动的折扣类型（游戏包，直接折扣等）</label>
+                        <textarea rows="10" class="tex"></textarea>
+                    </div>
+                </div>
+                <div class="row" id="secondque">
+                    <div class="que col-md-12">
+                        <label>请谈谈你希望购入的游戏</label>
+                        <textarea rows="10" class="tex"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <button id="submit" type="button" class="btn btn-primary btn-lg btn-block bod"
+                            data-toggle="modal"
+                            data-target=".bs-example-modal-sm">提交</button>
+                    <button id="reset" type="reset"
+                            class="btn btn-default btn-lg btn-block bod">重置</button>
+                </div>
+            </div>
+        </fieldset>
+        </form>
+    </div>
+    <div align="center" id="dloop">
+        <img id="loop" src="imgs/G胖.png" align="middle" width="250" height="250" >
+    </div>
+    <script>
+        $.validate({
+            lang: 'es'
+        });
+    </script>
+</body>
+</html>
+
+<!--我要去二次元了-->

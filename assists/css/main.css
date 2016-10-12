@@ -1,0 +1,71 @@
+body{
+    background: url(../../BG2.jpg) no-repeat fixed center;
+    background-size: cover;
+    font-family: "Microsoft YaHei UI", sans-serif;
+    padding: 20px 10px;
+}
+form.form {
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 5px;
+    /*background-color: #f0f2f5;*/
+    background-color: #454545;
+    padding: 20px;
+}
+label{
+    color: #cecece;
+}
+#lis{
+    display: none;
+}
+#loop{
+    text-align: center;
+}
+#niconicoG{
+    width: 40px;
+    margin: 10px 10px;
+}
+
+input.inp, select.sel {
+    color: #6c6c7a;
+    background: #cecece;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 5px 5px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+textarea.tex{
+    color: #6c6c7a;
+    background: #cecece;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 5px 5px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+button.bod{
+    padding: 10px 10px;
+}
+/*{
+    color: #6c6c7a;
+    background: #ffffff;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 5px 5px;
+    display: inline-block;
+    box-sizing: border-box;
+}*/
+
+#firstque {
+    display: none;
+}
+#secondque{
+    display: none;
+}
